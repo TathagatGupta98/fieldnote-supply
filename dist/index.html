@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Fieldnote Supply — notebooks, writing tools, and quiet goods for your desk.">
+<meta name="theme-color" content="#f6f3eb">
+<title>Fieldnote Supply — Goods for a slower desk</title>
+<link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+<script src="./shop.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#shop">Skip to products</a>
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="./assets/mark.svg" alt="" width="31" height="31"><span>Fieldnote<span class="brand-supply"> Supply</span></span></a>
+    <nav aria-label="Main navigation"><a href="#shop">Shop</a><a href="#about">About</a></nav>
+    <button id="open-saved" class="saved-trigger" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg> Saved <span id="saved-count">0</span></button>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="kicker"><span class="dot"></span> THE DESK COLLECTION</p>
+      <h1 id="hero-title">Goods for a<br><em>slower desk.</em></h1>
+      <p class="intro">A small collection of notebooks, writing tools, and everyday objects worth making room for.</p>
+      <a class="primary" href="#shop">Explore the collection <span aria-hidden="true">↘</span></a>
+    </div>
+    <figure class="hero-photo">
+      <img src="./assets/desk.jpg" alt="An open notebook, pencil, and cup of coffee on a sunlit walnut desk" width="768" height="512" fetchpriority="high">
+      <figcaption><span>FIG. 01</span> THE DESK, IN USE</figcaption>
+    </figure>
+  </section>
+  <section id="shop" class="shop" aria-labelledby="shop-title">
+    <div class="shop-top">
+      <div><p class="kicker">THE SHOP <span class="slash">/</span> <span id="product-count">03 GOODS</span></p><h2 id="shop-title">Desk essentials</h2></div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button type="button" data-filter="All" aria-pressed="true">All goods</button>
+        <button type="button" data-filter="Paper" aria-pressed="false">Paper</button>
+        <button type="button" data-filter="Writing" aria-pressed="false">Writing</button>
+        <button type="button" data-filter="Desk" aria-pressed="false">Desk</button>
+      </div>
+    </div>
+    <div class="products" id="products">
+      <article class="product" data-id="pocket" data-category="Paper" data-description="A clothbound notebook for lists, sketches, and ideas you want to keep close. Its dot grid gives you a little structure and plenty of room.">
+        <div class="product-visual"><button class="product-open" type="button" aria-label="View Pocket Grid Notebook"><img src="./assets/notebook.jpg" alt="Olive clothbound notebook with a cream elastic closure" width="768" height="512" loading="lazy"></button><button class="save-item" type="button" aria-label="Save Pocket Grid Notebook" aria-pressed="false"></button></div>
+        <p class="product-meta">PAPER <span>01</span></p><div class="product-line"><h3><button class="product-name" type="button">Pocket Grid Notebook</button></h3><span class="price">$16</span></div><p class="variant">Olive cloth · Dot grid</p>
+      </article>
+      <article class="product" data-id="brass" data-category="Writing" data-description="A slim click pen with a solid brass barrel and a satisfying weight. The finish picks up a patina with use.">
+        <div class="product-visual"><button class="product-open" type="button" aria-label="View Brass Click Pen"><img src="./assets/pen.jpg" alt="Brushed brass click pen on a dusty blush backdrop" width="768" height="512" loading="lazy"></button><button class="save-item" type="button" aria-label="Save Brass Click Pen" aria-pressed="false"></button></div>
+        <p class="product-meta">WRITING <span>02</span></p><div class="product-line"><h3><button class="product-name" type="button">Brass Click Pen</button></h3><span class="price">$28</span></div><p class="variant">Brushed brass · Black ink</p>
+      </article>
+      <article class="product" data-id="tray" data-category="Desk" data-description="A shallow leather tray for the things that land on your desk at the end of the day: keys, clips, earbuds, or loose change.">
+        <div class="product-visual"><button class="product-open" type="button" aria-label="View Leather Catchall"><img src="./assets/tray.jpg" alt="Dark brown leather catchall with folded corners" width="768" height="512" loading="lazy"></button><button class="save-item" type="button" aria-label="Save Leather Catchall" aria-pressed="false"></button></div>
+        <p class="product-meta">DESK <span>03</span></p><div class="product-line"><h3><button class="product-name" type="button">Leather Catchall</button></h3><span class="price">$34</span></div><p class="variant">Espresso leather · Small</p>
+      </article>
+    </div>
+  </section>
+  <section class="about" id="about" aria-labelledby="about-title">
+    <p class="kicker"><span class="dot"></span> ABOUT FIELDNOTE</p>
+    <div><h2 id="about-title">A few good things, used often.</h2><p>Fieldnote Supply is a small stationery and desk goods shop built around a simple idea: the objects we reach for every day should feel good to use.</p><p>Online ordering isn’t open yet. In the meantime, you can browse the collection and save your favorites on this device.</p></div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#top"><img src="./assets/mark.svg" alt="" width="26" height="26"> Fieldnote Supply</a><span>STATIONERY &amp; DESK GOODS</span><a href="#top">Back to top ↑</a></div></footer>
+<dialog id="details" aria-labelledby="detail-title">
+  <div class="dialog-inner">
+    <form method="dialog" class="dialog-close"><button aria-label="Close product details" autofocus>×</button></form>
+    <img id="detail-image" alt="">
+    <p class="kicker" id="detail-meta"></p>
+    <h2 id="detail-title"></h2>
+    <p id="detail-description"></p>
+    <button type="button" class="primary" id="detail-save"></button>
+  </div>
+</dialog>
+<dialog id="saved" aria-labelledby="saved-title">
+  <div class="dialog-inner">
+    <form method="dialog" class="dialog-close"><button aria-label="Close saved items" autofocus>×</button></form>
+    <p class="kicker">YOUR COLLECTION</p><h2 id="saved-title">Saved goods</h2>
+    <p id="saved-note">Saved items stay in this browser.</p>
+    <ul id="saved-list"></ul>
+    <form method="dialog"><button class="primary">Keep browsing <span aria-hidden="true">↗</span></button></form>
+  </div>
+</dialog>
+<div class="sr-only" id="announcement" role="status"></div>
+</body>
+</html>
