@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Fieldnote Supply merchant dashboard.">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="robots" content="noindex">
+  <title>Merchant dashboard | Fieldnote Supply</title>
+  <link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to dashboard</a>
+  <header class="site-header">
+    <div class="wrap merchant-header">
+      <a class="brand" href="../"><img src="../assets/mark.svg" alt="" width="31" height="31">Fieldnote Supply</a>
+      <a class="storefront-link" href="../">View storefront <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <div class="wrap merchant-layout">
+    <nav class="merchant-nav" aria-label="Dashboard">
+      <p class="kicker">MERCHANT</p>
+      <a href="#main">Overview</a>
+      <a href="#invoices">Invoices</a>
+      <a href="#sales">Sales</a>
+      <a href="#analytics">Analytics</a>
+    </nav>
+
+    <main id="main" class="merchant-main" tabindex="-1">
+      <p class="kicker"><span class="dot"></span> FIELDNOTE SUPPLY</p>
+      <h1>Merchant dashboard</h1>
+      <p class="merchant-intro">View invoices, sales activity, and store performance in one place.</p>
+      <p class="merchant-status">Store data isn’t connected yet.</p>
+
+      <section class="merchant-panel" id="invoices" aria-labelledby="invoices-title">
+        <div class="panel-header"><h2 id="invoices-title">Invoices</h2><p>Issued invoices and their payment status.</p></div>
+        <table>
+          <caption class="sr-only">Invoices</caption>
+          <thead><tr><th scope="col">Invoice</th><th scope="col">Date</th><th scope="col">Amount</th><th scope="col">Status</th></tr></thead>
+          <tbody><tr><td colspan="4" class="empty-cell"><strong>No invoices to display</strong><p>Issued invoices will appear here.</p></td></tr></tbody>
+        </table>
+      </section>
+
+      <section class="merchant-panel" id="sales" aria-labelledby="sales-title">
+        <div class="panel-header"><h2 id="sales-title">Sales</h2><p>Recent orders and sales totals.</p></div>
+        <table>
+          <caption class="sr-only">Sales</caption>
+          <thead><tr><th scope="col">Order</th><th scope="col">Date</th><th scope="col">Total</th><th scope="col">Status</th></tr></thead>
+          <tbody><tr><td colspan="4" class="empty-cell"><strong>No sales to display</strong><p>Orders will appear here once sales data is connected.</p></td></tr></tbody>
+        </table>
+      </section>
+
+      <section class="merchant-panel" id="analytics" aria-labelledby="analytics-title">
+        <div class="panel-header"><h2 id="analytics-title">Analytics</h2><p>Key metrics for your store.</p></div>
+        <dl class="metric-grid">
+          <div><dt>Store visits</dt><dd aria-label="No data">—</dd></div>
+          <div><dt>Orders</dt><dd aria-label="No data">—</dd></div>
+          <div><dt>Gross sales</dt><dd aria-label="No data">—</dd></div>
+        </dl>
+        <div class="analytics-empty"><strong>No analytics data</strong><p>Metrics will appear when store activity is available.</p></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

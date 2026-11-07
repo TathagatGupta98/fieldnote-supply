@@ -9,3 +9,7 @@ dialog{color:var(--ink);background:var(--paper);border:1px solid var(--line);bor
 @media(max-width:670px){.wrap{width:calc(100% - 32px)}.nav{height:64px;gap:10px}.nav .brand{font-size:19px;gap:5px}.nav .brand img{width:24px;height:24px}.nav nav{gap:13px;font-size:12px}.saved-trigger{padding:6px;gap:4px;font-size:12px}.saved-trigger svg{display:none}.hero{grid-template-columns:1fr;gap:24px;padding:32px 0 24px}.hero-copy{padding:0}h1{font-size:clamp(55px,11vw,75px);margin:15px 0}.intro{font-size:15px;margin-bottom:18px}.shop{padding:27px 0 34px}.shop-top{display:grid;gap:13px;margin-bottom:15px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 12px}.product-name{font-size:21px}.price{font-size:12px}.product-meta{margin-top:8px;font-size:10px}.variant{font-size:12px}.about{grid-template-columns:1fr;margin-bottom:30px}.footer-inner>span{display:none}}
 @media(max-width:360px){.nav .brand-supply{display:none}.filters{gap:4px}.filters button{padding-inline:10px}.product-line{display:block}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+.footer-inner { flex-wrap: wrap; }
+.footer-inner > a:not(.brand) { font-size: 13px; }
+.footer-inner > a:not(.brand):hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
