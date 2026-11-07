@@ -78,7 +78,7 @@ function renderSaved() {
   const items = products.filter((product) => favorites.has(product.id));
   byId("saved-note").textContent = items.length
     ? (canPersist ? "Saved items stay in this browser." : "Saved items are available until you leave this page.")
-    : "Nothing saved yet. Use the bookmark on any product to keep it here.";
+    : "Nothing saved yet. Use the bookmark on any plan to keep it here.";
   for (const [index, product] of items.entries()) {
     const item = document.createElement("li");
     const image = new Image();
@@ -122,8 +122,8 @@ for (const filter of filters) {
       if (!product.card.hidden) count += 1;
     }
     for (const button of filters) button.setAttribute("aria-pressed", button === filter);
-    byId("product-count").textContent = `${String(count).padStart(2, "0")} ${count === 1 ? "GOOD" : "GOODS"}`;
-    byId("announcement").textContent = `Showing ${count} ${count === 1 ? "product" : "products"}.`;
+    byId("product-count").textContent = `${String(count).padStart(2, "0")} ${count === 1 ? "PLAN" : "PLANS"}`;
+    byId("announcement").textContent = `Showing ${count} ${count === 1 ? "plan" : "plans"}.`;
   });
 }
 

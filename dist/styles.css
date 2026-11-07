@@ -13,3 +13,5 @@ dialog{color:var(--ink);background:var(--paper);border:1px solid var(--line);bor
 .footer-inner { flex-wrap: wrap; }
 .footer-inner > a:not(.brand) { font-size: 13px; }
 .footer-inner > a:not(.brand):hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+
+.price { white-space: nowrap; }

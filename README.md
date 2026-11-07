@@ -1,8 +1,8 @@
 # Fieldnote Supply
 
-A small demo storefront for stationery and desk goods. Visitors can filter the
+A small demo storefront for monthly stationery and desk goods subscriptions. Visitors can filter the
 catalog, open product details, and save favorites in their browser. There is no
-checkout, order submission, payment processing, or finance management.
+checkout, subscription enrollment, recurring billing integration, or finance management.
 
 ## Run locally
 
